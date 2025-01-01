@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin</title>
+</head>
+<body>
+  <h1>Admin Panel</h1>
+  <div id="welcomeMessage"></div>
+  <button id="logoutButton">Logout</button>
+  <h2>Add Record</h2>
+  <form id="recordForm">
+    <label>First Name: <input type="text" name="firstName" required></label><br>
+    <label>Last Name: <input type="text" name="lastName" required></label><br>
+    <label>Birth Date: <input type="date" name="birthDate" required></label><br>
+    <button type="submit">Add Record</button>
+  </form>
+  <h2>Records</h2>
+  <table border="1">
+    <thead>
+      <tr>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Birth Date</th>
+      </tr>
+    </thead>
+    <tbody id="recordsTable"></tbody>
+  </table>
+  <script src="/client.js"></script>
+</body>
+</html>
